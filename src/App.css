@@ -1,0 +1,161 @@
+/**
+ * Author: Ria Gino
+ * GitHub: https://github.com/astrobunnydev
+ */
+
+:root {
+  --color-background: #111113;
+  --color-surface: #19191d;
+  --color-text: #f2e9df;
+  --color-text-muted: #9c989f;
+  --color-burgundy: #7c2638;
+  --color-coffee: #a8754f;
+}
+
+.site {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(124, 38, 56, 0.14),
+      transparent 34rem
+    ),
+    var(--color-background);
+
+  color: var(--color-text);
+}
+
+.site-hero {
+  width: 100%;
+  height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem 1.5rem;
+}
+
+.site-hero__brand {
+  width: min(100%, 900px);
+  text-align: center;
+}
+
+.site-hero__icons {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: 0.35rem;
+}
+
+.site-hero__title {
+  margin: 0;
+
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+.site-hero__intro {
+  max-width: 640px;
+  margin: 1.5rem auto 0;
+
+  color: var(--color-text-muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.site-hero__tagline {
+  margin: 1rem 0 0;
+
+  color: var(--color-coffee);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+a {
+  color: #c58a5a;
+  text-decoration-color: rgba(197, 138, 90, 0.55);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: #e0ad7a;
+}
+
+.site {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(124, 38, 56, 0.14),
+      transparent 34rem
+    ),
+    var(--color-background);
+
+  color: var(--color-text);
+}
+
+.site-footer {
+  position: absolute;
+  left: 50%;
+  bottom: 1.75rem;
+  transform: translateX(-50%);
+}
+
+.site-footer__github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text-muted);
+
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.site-footer__github:hover {
+  color: var(--color-coffee);
+  transform: translateY(-2px);
+}
+
+.site-footer__github-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .site-hero {
+    padding: 2rem 1.25rem;
+  }
+
+  .site-hero__icons {
+    margin-bottom: 1.25rem;
+  }
+
+  .site-hero__intro {
+    margin-top: 1.5rem;
+  }
+}
