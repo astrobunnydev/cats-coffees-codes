@@ -15,7 +15,7 @@ function App() {
           </p>
 
           <h1 className="site-hero__title">
-            cats. coffee. codes.
+            cats. coffees. codes.
           </h1>
 
           <p className="site-hero__intro">
