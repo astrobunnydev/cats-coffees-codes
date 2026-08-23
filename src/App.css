@@ -148,7 +148,7 @@ a:hover {
 
 @media (max-width: 640px) {
   .site-hero {
-    padding: 2rem 1.25rem;
+    padding: 0;
   }
 
   .site-hero__brand {
