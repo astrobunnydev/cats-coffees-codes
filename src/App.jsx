@@ -6,7 +6,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const TITLE = '</ cats. coffees. codes. >'
+const TITLE = '</ cats. coffees. codes. >'
 const TYPE_INTERVAL_MS = 45
 
 function App() {
