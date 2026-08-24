@@ -42,14 +42,35 @@ function App() {
   return (
     <main className="site">
       <nav className="site-nav" aria-label="Primary">
-        <a className="site-nav__link" href="#cats">
+        <a className="site-nav__link site-nav__link--cats" href="#cats">
+          <svg
+            className="site-nav__tail"
+            viewBox="0 0 24 12"
+            aria-hidden="true"
+          >
+            <path
+              d="M22 6c-3-4-6 4-9 0s-6 4-9 0"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
           cats.
         </a>
-        <a className="site-nav__link" href="#coffees">
+        <a className="site-nav__link site-nav__link--coffees" href="#coffees">
           coffees.
+          <span className="site-nav__steam" aria-hidden="true">
+            <span className="site-nav__steam-wisp" />
+            <span className="site-nav__steam-wisp" />
+            <span className="site-nav__steam-wisp" />
+          </span>
         </a>
-        <a className="site-nav__link" href="#codes">
+        <a className="site-nav__link site-nav__link--codes" href="#codes">
           codes.
+          <span className="site-nav__dev" aria-hidden="true">
+            &gt;<span className="site-nav__dev-caret">_</span>
+          </span>
         </a>
       </nav>
 
