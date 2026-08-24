@@ -59,6 +59,28 @@
   letter-spacing: -0.06em;
 }
 
+.site-hero__caret {
+  display: inline-block;
+  width: 0.06em;
+  height: 0.78em;
+  margin-left: 0.06em;
+
+  background: var(--color-coffee);
+  vertical-align: -0.06em;
+
+  animation: site-hero__caret-blink 1s step-end infinite;
+}
+
+@keyframes site-hero__caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .site-hero__intro {
   max-width: 640px;
   margin: 1.5rem auto 0;

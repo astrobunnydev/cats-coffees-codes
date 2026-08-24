@@ -3,9 +3,42 @@
  * GitHub: https://github.com/astrobunnydev
  */
 
+import { useEffect, useState } from 'react'
 import './App.css'
 
+const TITLE = '</ cats. coffees. codes. >'
+const TYPE_INTERVAL_MS = 45
+
 function App() {
+  const [typedLength, setTypedLength] = useState(0)
+  const [showCaret, setShowCaret] = useState(false)
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches
+
+    if (prefersReducedMotion) {
+      setTypedLength(TITLE.length)
+      return
+    }
+
+    setShowCaret(true)
+
+    let charsTyped = 0
+    const interval = setInterval(() => {
+      charsTyped += 1
+      setTypedLength(charsTyped)
+
+      if (charsTyped >= TITLE.length) {
+        clearInterval(interval)
+        setTimeout(() => setShowCaret(false), 900)
+      }
+    }, TYPE_INTERVAL_MS)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <main className="site">
       <section className="site-hero">
@@ -14,8 +47,11 @@ function App() {
             🐈 ☕ 💻
           </p>
 
-          <h1 className="site-hero__title">
-            cats. coffees. codes.
+          <h1 className="site-hero__title" aria-label="cats. coffees. codes.">
+            <span aria-hidden="true">
+              {TITLE.slice(0, typedLength)}
+              {showCaret && <span className="site-hero__caret" />}
+            </span>
           </h1>
 
           <p className="site-hero__intro">
