@@ -28,6 +28,41 @@
   color: var(--color-text);
 }
 
+.site-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+
+  padding: 1.5rem 1.5rem;
+  border-bottom: 1px solid rgba(242, 233, 223, 0.08);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.site-nav__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+
+  transition: color 160ms ease;
+}
+
+.site-nav__link:hover {
+  color: var(--color-coffee);
+}
+
 .site-hero {
   width: 100%;
   height: 100dvh;
@@ -144,9 +179,13 @@ a:hover {
   left: 50%;
   bottom: 1.75rem;
   transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.site-footer__github {
+.site-footer__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -158,12 +197,12 @@ a:hover {
     transform 160ms ease;
 }
 
-.site-footer__github:hover {
+.site-footer__link:hover {
   color: var(--color-coffee);
   transform: translateY(-2px);
 }
 
-.site-footer__github-icon {
+.site-footer__icon {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -208,7 +247,7 @@ a:hover {
     bottom: 1.25rem;
   }
 
-  .site-footer__github-icon {
+  .site-footer__icon {
     width: 1.35rem;
     height: 1.35rem;
   }
