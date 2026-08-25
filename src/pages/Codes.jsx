@@ -3,6 +3,41 @@
  * GitHub: https://github.com/astrobunnydev
  */
 
+import { useState } from 'react'
+
+const SERVICES = [
+  {
+    label: 'Build & Rebuild',
+    description:
+      "New builds, redesigns, and sites that have outgrown their current setup.",
+  },
+  {
+    label: 'Technical Audits',
+    description:
+      "A deep look at how the site is built, what's slowing it down, and what's likely to break next.",
+  },
+  {
+    label: 'Maintenance & Fixes',
+    description:
+      "Ongoing updates, bug fixes, and keeping an existing site healthy long after launch.",
+  },
+  {
+    label: 'Migrations',
+    description:
+      "Moving a site to a new host, theme, or platform without losing what already works.",
+  },
+  {
+    label: 'Integrations',
+    description:
+      "Connecting the tools you already use, forms, booking systems, payment providers, and more, into the site itself.",
+  },
+  {
+    label: 'Performance',
+    description:
+      "Finding what's making the site slow and fixing it, from images to plugins to server response time.",
+  },
+]
+
 const STEPS = [
   {
     number: '01',
@@ -14,7 +49,7 @@ const STEPS = [
     number: '02',
     title: 'Technical Audit',
     description:
-      "From there, I dig deeper into how the site is built, how well it performs, how its different parts work together, and anything sitting beneath the obvious problem. Nine years of doing this means I know where to look, not just at what's broken, but at what might break next.",
+      "From there, I dig deeper into how the site is built, how well it performs, how its different parts work together, and anything sitting beneath the obvious problem. I'm looking not just at what's broken, but at what might break next.",
   },
   {
     number: '03',
@@ -62,6 +97,8 @@ const WORK = [
 ]
 
 function Codes() {
+  const [activeService, setActiveService] = useState(0)
+
   return (
     <section className="page page--codes">
       <header className="page__header">
@@ -71,6 +108,35 @@ function Codes() {
           real look at what you actually need.
         </p>
       </header>
+
+      <div className="what">
+        <h2 className="what__heading">What I do</h2>
+        <p className="process__subheading">
+          10 years in web development. still curious, still debugging.
+        </p>
+
+        <ul className="what__pills">
+          {SERVICES.map((service, index) => (
+            <li key={service.label}>
+              <button
+                type="button"
+                className={`what__pill${
+                  index === activeService ? ' is-active' : ''
+                }`}
+                onMouseEnter={() => setActiveService(index)}
+                onFocus={() => setActiveService(index)}
+                onClick={() => setActiveService(index)}
+              >
+                [ {service.label} ]
+              </button>
+            </li>
+          ))}
+        </ul>
+
+        <p className="what__description">
+          {SERVICES[activeService].description}
+        </p>
+      </div>
 
       <div className="process">
         <h2 className="process__heading">How I Work</h2>
