@@ -151,7 +151,7 @@ function Codes() {
       <div className="process">
         <h2 className="process__heading">How I Work</h2>
         <p className="process__subheading">
-          From first call to launch, here's what working together looks
+          from first call to launch, here's what working together looks
           like.
         </p>
 
