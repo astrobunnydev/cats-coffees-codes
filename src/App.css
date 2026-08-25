@@ -786,7 +786,7 @@ a:hover {
 
   width: 3.75rem;
   height: 1.75rem;
-  padding: 0 0.4rem;
+  padding: 0 0.55rem;
 
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -829,7 +829,7 @@ a:hover {
   position: absolute;
   box-sizing: border-box;
   top: 50%;
-  left: 0.3rem;
+  left: 0.35rem;
 
   width: 1.35rem;
   height: 1.35rem;
@@ -843,7 +843,7 @@ a:hover {
 }
 
 .theme-toggle__knob[data-position="dark"] {
-  left: calc(100% - 1.35rem - 0.3rem);
+  left: calc(100% - 1.35rem - 0.35rem);
 }
 
 @media (max-width: 640px) {
