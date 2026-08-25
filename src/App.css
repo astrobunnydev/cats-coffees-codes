@@ -155,9 +155,9 @@
   text-shadow:
     0 0 4px currentColor,
     0 0 10px currentColor,
-    0 0 22px var(--color-coffee),
-    0 0 42px var(--color-coffee),
-    0 0 72px var(--color-coffee);
+    0 0 7px var(--color-coffee),
+    0 0 18px var(--color-coffee),
+    0 0 24px var(--color-coffee);
 }
 
 .site-nav__links {
