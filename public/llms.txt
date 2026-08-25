@@ -1,0 +1,14 @@
+# cats. coffees. codes.
+
+> Personal site of Ria Gino — freelance full-stack web developer. The site is a small collection of personal projects, experiments, and web things, organized as three sections: cats, coffees, and codes.
+
+## Pages
+
+- [codes.](https://catscoffeescodes.com/codes): Ria's freelance web development work — services offered, how she works with clients, and selected project case studies.
+- [cats.](https://catscoffeescodes.com/cats): Placeholder page, cat photos coming soon.
+- [coffees.](https://catscoffeescodes.com/coffees): Placeholder page, travel and photography content coming soon.
+
+## Notes
+
+- Ria's CV is available at [ria-gino-cv.pdf](https://catscoffeescodes.com/ria-gino-cv.pdf).
+- More about Ria at [riagino.info](https://riagino.info).
