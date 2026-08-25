@@ -34,28 +34,28 @@ const WORK = [
   {
     name: 'P.M Port Melbourne',
     meta: 'Luxury apartment leasing · Melbourne',
-    tags: ['WordPress', 'Elementor', 'Astra', 'Built from scratch'],
+    tags: ['Built from scratch', 'WordPress', 'Elementor', 'Astra'],
     url: 'https://pmportmelbourne.com.au/',
     image: '/pmportmelbourne.jpg',
   },
   {
     name: 'American Family Care',
     meta: 'Urgent care clinic locator · 400+ US locations',
-    tags: ['WordPress', 'Elementor', 'Astra', 'Built from scratch'],
+    tags: ['Built from scratch', 'WordPress', 'Elementor', 'Astra'],
     url: 'https://www.afcurgentcare.com/',
     image: '/afc.jpg',
   },
   {
     name: 'The Alpine Club',
     meta: 'Private mountain club membership · Telluride',
-    tags: ['WordPress', 'ACF', 'Custom Theme'],
+    tags: ['Maintenance', 'WordPress', 'ACF', 'Custom Theme'],
     url: 'https://thealpineclub.com/',
     image: '/alpine.jpg',
   },
   {
     name: 'Ramsay Postgraduate Scholarship',
     meta: 'Postgraduate scholarship program · Australia',
-    tags: ['WordPress', 'ACF', 'Elementor', 'Astra', 'Built from scratch'],
+    tags: ['Built from scratch', 'WordPress', 'ACF', 'Elementor', 'Astra'],
     url: 'https://ramsaypostgradscholarship.com/',
     image: '/ramsay.jpg',
   },
@@ -111,6 +111,9 @@ function Codes() {
                   aria-hidden="true"
                 />
                 <div className="work__card-scrim" aria-hidden="true" />
+                <span className="work__card-arrow" aria-hidden="true">
+                  ↗
+                </span>
 
                 <div className="work__card-content">
                   <h3 className="work__card-title">{item.name}</h3>
@@ -120,7 +123,6 @@ function Codes() {
                       <li key={tag}>{tag}</li>
                     ))}
                   </ul>
-                  <span className="work__card-link">visit site ↗</span>
                 </div>
               </a>
             </li>
