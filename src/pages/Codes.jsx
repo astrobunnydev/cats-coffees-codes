@@ -44,7 +44,7 @@ const SERVICES = [
   {
     label: 'AI & Automation',
     description:
-      "Using AI-assisted development, custom dashboards, and lightweight automations to reduce repetitive work, streamline workflows, and bring data and processes into one place.",
+      "Using AI-assisted development, custom dashboards, and lightweight automations to reduce repetitive work, streamline workflows, and bring data, tools, and processes into one place.",
   },
 ]
 
