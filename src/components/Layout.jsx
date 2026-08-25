@@ -79,6 +79,7 @@ function Layout() {
       <Outlet />
 
       <footer className="site-footer">
+        <div className="site-footer__row">
         <button
           type="button"
           className="theme-toggle"
@@ -183,6 +184,7 @@ function Layout() {
               />
             </svg>
           </a>
+        </div>
         </div>
 
         <p className="site-footer__copyright">
