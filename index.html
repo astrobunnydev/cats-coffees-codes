@@ -16,7 +16,18 @@
     />
 
     <title>cats. coffees. codes.</title>
-    
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ccc-theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://catscoffeescodes.com/" />
     <meta property="og:title" content="cats. coffees. codes." />
