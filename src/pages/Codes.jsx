@@ -41,6 +41,11 @@ const SERVICES = [
     description:
       "Setting up and troubleshooting website tracking so the data being collected actually reflects what users are doing.",
   },
+  {
+    label: 'AI & Automation',
+    description:
+      "Using AI-assisted development, custom dashboards, and lightweight automations to reduce repetitive work, streamline workflows, and bring data and processes into one place.",
+  },
 ]
 
 const STEPS = [
