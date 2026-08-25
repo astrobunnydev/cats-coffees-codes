@@ -145,16 +145,23 @@
   text-decoration: none;
   font-weight: 700;
 
-  transition: text-shadow 250ms ease;
+  transition:
+    color 160ms ease,
+    text-shadow 250ms ease;
 }
 
-.site-nav__brand:hover,
-.site-nav__brand.active {
-  color: var(--color-text-muted);
+.site-nav__brand:hover {
+  color: color-mix(in srgb, var(--color-coffee) 55%, white);
   text-shadow:
-    0 0 4px var(--color-coffee),
-    0 0 10px var(--color-coffee),
-    0 0 20px var(--color-coffee);
+    0 0 4px currentColor,
+    0 0 10px currentColor,
+    0 0 22px var(--color-coffee),
+    0 0 42px var(--color-coffee),
+    0 0 72px var(--color-coffee);
+}
+
+.site-nav__brand.active {
+  color: var(--color-coffee);
 }
 
 .site-nav__links {
