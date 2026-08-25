@@ -8,13 +8,13 @@ const STEPS = [
     number: '01',
     title: 'Discovery Call',
     description:
-      "We talk through the issues you're seeing on your site, the improvements you want to make, and where you want your website to go. This is about understanding your goals before any technical work starts.",
+      "We talk through what's working, what isn't, what you want to change, and where you want the site to go. The goal is to understand the problem before any technical work starts.",
   },
   {
     number: '02',
     title: 'Technical Audit',
     description:
-      "From there, I dig deeper: performance, scalability, technical SEO, and the issues sitting under the surface that most clients never see. Nine years of doing this means I know where to look, beyond what you've already reported.",
+      "From there, I dig deeper into how the site is built, how well it performs, how its different parts work together, and anything sitting beneath the obvious problem. Nine years of doing this means I know where to look, not just at what's broken, but at what might break next.",
   },
   {
     number: '03',
@@ -26,7 +26,7 @@ const STEPS = [
     number: '04',
     title: 'Build & Launch',
     description:
-      "From there, I build, test, and ship on WordPress or Shopify, with regular check-ins along the way so you're never left guessing where things stand.",
+      "Once the scope is agreed, I build, test, and launch, with regular check-ins along the way so you always know what's done, what's next, and where things stand.",
   },
 ]
 
