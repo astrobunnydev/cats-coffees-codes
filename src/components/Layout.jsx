@@ -184,6 +184,10 @@ function Layout() {
             </svg>
           </a>
         </div>
+
+        <p className="site-footer__copyright">
+          © {new Date().getFullYear()} cats. coffees. codes.
+        </p>
       </footer>
     </div>
   )
