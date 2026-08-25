@@ -8,25 +8,25 @@ const STEPS = [
     number: '01',
     title: 'Discovery Call',
     description:
-      "We hop on a call and talk through your business, your goals, and where things stand right now. Just a conversation, not a pitch.",
+      "Every project starts with understanding your business, not just your website. We talk through your goals, your customers, and where things stand today, so any recommendation I make is grounded in what you actually need.",
   },
   {
     number: '02',
     title: 'Technical Audit',
     description:
-      "I go through your site: performance, technical SEO, structure, what's working, what's not. Nine years of doing this means the recommendations come from experience, not guesswork.",
+      "I review your site's performance, technical SEO, and structure to find out what's actually holding it back. Nine years of doing this means I can tell the difference between what looks broken and what's actually costing you.",
   },
   {
     number: '03',
     title: 'Scope & Estimate',
     description:
-      "You'll get an itemized breakdown of the work, the timeline, and the cost. Enough detail that you know exactly what you're paying for.",
+      "You'll get a clear, itemized plan covering the work, the timeline, and the cost, laid out so you know exactly what you're saying yes to before anything starts.",
   },
   {
     number: '04',
     title: 'Build & Launch',
     description:
-      "I build, test, and ship on WordPress or Shopify, with regular updates along the way so you're never left wondering what's happening.",
+      "From there, I build, test, and ship on WordPress or Shopify, with regular check-ins along the way so you're never left guessing where things stand.",
   },
 ]
 
