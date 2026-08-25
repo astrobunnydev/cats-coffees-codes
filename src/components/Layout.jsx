@@ -76,7 +76,9 @@ function Layout() {
         </div>
       </nav>
 
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
 
       <footer className="site-footer">
         <div className="site-footer__row">
