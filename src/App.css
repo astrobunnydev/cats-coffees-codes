@@ -727,10 +727,17 @@ a:hover {
 
 .site-footer {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 1.75rem;
-  transform: translateX(-50%);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-footer__links {
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -759,6 +766,9 @@ a:hover {
 }
 
 .theme-toggle {
+  position: absolute;
+  left: 1.5rem;
+
   appearance: none;
   padding: 0;
   border: none;
