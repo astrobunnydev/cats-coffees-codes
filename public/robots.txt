@@ -1,2 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /ria-gino-cv.pdf
+Disallow: /pmportmelbourne.jpg
+Disallow: /afc.jpg
+Disallow: /alpine.jpg
+Disallow: /ramsay.jpg
+Disallow: /favicon.svg
+Disallow: /icons.svg
