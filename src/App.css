@@ -141,7 +141,7 @@
 }
 
 .site-nav__brand {
-  color: var(--color-text-muted);
+  color: var(--color-coffee);
   text-decoration: none;
   font-weight: 700;
 
@@ -158,10 +158,6 @@
     0 0 22px var(--color-coffee),
     0 0 42px var(--color-coffee),
     0 0 72px var(--color-coffee);
-}
-
-.site-nav__brand.active {
-  color: var(--color-coffee);
 }
 
 .site-nav__links {
