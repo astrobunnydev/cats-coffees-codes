@@ -8,13 +8,13 @@ const STEPS = [
     number: '01',
     title: 'Discovery Call',
     description:
-      "Every project starts with understanding your business, not just your website. We talk through your goals, your customers, and where things stand today, so any recommendation I make is grounded in what you actually need.",
+      "We talk through the issues you're seeing on your site, the improvements you want to make, and where you want your website to go. This is about understanding your goals before any technical work starts.",
   },
   {
     number: '02',
     title: 'Technical Audit',
     description:
-      "I review your site's performance, technical SEO, and structure to find out what's actually holding it back. Nine years of doing this means I can tell the difference between what looks broken and what's actually costing you.",
+      "From there, I dig deeper: performance, scalability, technical SEO, and the issues sitting under the surface that most clients never see. Nine years of doing this means I know where to look, beyond what you've already reported.",
   },
   {
     number: '03',
