@@ -34,26 +34,30 @@ const WORK = [
   {
     name: 'P.M Port Melbourne',
     meta: 'Luxury apartment leasing · Melbourne',
-    tags: ['WordPress', 'Elementor', 'Astra'],
+    tags: ['WordPress', 'Elementor', 'Astra', 'Built from scratch'],
     url: 'https://pmportmelbourne.com.au/',
+    image: '/pmportmelbourne.jpg',
   },
   {
     name: 'American Family Care',
     meta: 'Urgent care clinic locator · 400+ US locations',
-    tags: ['WordPress', 'Elementor', 'Astra'],
+    tags: ['WordPress', 'Elementor', 'Astra', 'Built from scratch'],
     url: 'https://www.afcurgentcare.com/',
+    image: '/afc.jpg',
   },
   {
     name: 'The Alpine Club',
     meta: 'Private mountain club membership · Telluride',
     tags: ['WordPress', 'ACF', 'Custom Theme'],
     url: 'https://thealpineclub.com/',
+    image: '/alpine.jpg',
   },
   {
     name: 'Ramsay Postgraduate Scholarship',
     meta: 'Postgraduate scholarship program · Australia',
-    tags: ['WordPress', 'ACF', 'Elementor', 'Astra'],
+    tags: ['WordPress', 'ACF', 'Elementor', 'Astra', 'Built from scratch'],
     url: 'https://ramsaypostgradscholarship.com/',
+    image: '/ramsay.jpg',
   },
 ]
 
@@ -94,21 +98,30 @@ function Codes() {
 
         <ul className="work__grid">
           {WORK.map((item) => (
-            <li className="work__card" key={item.name}>
-              <h3 className="work__card-title">{item.name}</h3>
-              <p className="work__card-meta">{item.meta}</p>
-              <ul className="work__card-tags">
-                {item.tags.map((tag) => (
-                  <li key={tag}>{tag}</li>
-                ))}
-              </ul>
+            <li key={item.name}>
               <a
-                className="work__card-link"
+                className="work__card"
                 href={item.url}
                 target="_blank"
                 rel="noreferrer"
               >
-                visit site ↗
+                <div
+                  className="work__card-preview"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  aria-hidden="true"
+                />
+                <div className="work__card-scrim" aria-hidden="true" />
+
+                <div className="work__card-content">
+                  <h3 className="work__card-title">{item.name}</h3>
+                  <p className="work__card-meta">{item.meta}</p>
+                  <ul className="work__card-tags">
+                    {item.tags.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
+                  <span className="work__card-link">visit site ↗</span>
+                </div>
               </a>
             </li>
           ))}
