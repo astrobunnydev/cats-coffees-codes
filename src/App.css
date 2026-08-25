@@ -12,10 +12,62 @@
   --color-coffee: #a8754f;
 }
 
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page {
+    animation: page-fade-in 0.5s ease both;
+  }
+
+  .process__card,
+  .work__card {
+    opacity: 0;
+    animation: page-fade-in 0.5s ease both;
+  }
+
+  .process__card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .process__card:nth-child(2) {
+    animation-delay: 0.18s;
+  }
+  .process__card:nth-child(3) {
+    animation-delay: 0.26s;
+  }
+  .process__card:nth-child(4) {
+    animation-delay: 0.34s;
+  }
+
+  .work__card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .work__card:nth-child(2) {
+    animation-delay: 0.16s;
+  }
+  .work__card:nth-child(3) {
+    animation-delay: 0.22s;
+  }
+  .work__card:nth-child(4) {
+    animation-delay: 0.28s;
+  }
+  .work__card:nth-child(5) {
+    animation-delay: 0.34s;
+  }
+}
+
 .site {
+  position: relative;
   width: 100%;
-  height: 100dvh;
-  overflow: hidden;
+  min-height: 100dvh;
 
   background:
     radial-gradient(
@@ -37,8 +89,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.75rem;
+  justify-content: space-between;
 
   padding: 1.5rem 1.5rem;
   border-bottom: 1px solid rgba(242, 233, 223, 0.08);
@@ -52,6 +103,25 @@
   letter-spacing: 0.04em;
 }
 
+.site-nav__brand {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: color 160ms ease;
+}
+
+.site-nav__brand:hover,
+.site-nav__brand.active {
+  color: var(--color-coffee);
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
 .site-nav__link {
   position: relative;
 
@@ -61,7 +131,8 @@
   transition: color 160ms ease;
 }
 
-.site-nav__link:hover {
+.site-nav__link:hover,
+.site-nav__link.active {
   color: var(--color-coffee);
 }
 
@@ -201,6 +272,7 @@
 }
 
 .site-hero {
+  box-sizing: border-box;
   width: 100%;
   height: 100dvh;
 
@@ -284,6 +356,255 @@
   letter-spacing: 0.04em;
 }
 
+.page {
+  box-sizing: border-box;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 8rem 1.5rem 7rem;
+}
+
+.page--placeholder {
+  min-height: 100dvh;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page--placeholder .page__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.page--placeholder .page__intro {
+  margin: 0;
+  color: var(--color-text-muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 1rem;
+}
+
+.page__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.page__title {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.page__intro {
+  max-width: 34rem;
+  margin: 0 auto;
+
+  color: var(--color-text-muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  line-height: 1.7;
+}
+
+.page__cv-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+
+  color: var(--color-coffee);
+  text-decoration-color: rgba(168, 117, 79, 0.55);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.process__heading {
+  margin: 0 0 0.5rem;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.process__subheading {
+  margin: 0 0 3rem;
+  text-align: center;
+
+  color: var(--color-text-muted);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.95rem;
+}
+
+.process__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.process__card {
+  box-sizing: border-box;
+  padding: 2rem 1.75rem;
+
+  background: var(--color-surface);
+  border: 1px solid rgba(242, 233, 223, 0.08);
+  border-radius: 0.75rem;
+}
+
+.process__number {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--color-coffee);
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.process__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.process__description {
+  margin: 0;
+
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .process__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.work {
+  margin-top: 5rem;
+  padding-top: 3.5rem;
+  border-top: 1px solid rgba(242, 233, 223, 0.08);
+  text-align: center;
+}
+
+.work__heading {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.work__grid {
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  text-align: left;
+}
+
+.work__card {
+  box-sizing: border-box;
+  padding: 1.75rem;
+
+  background: var(--color-surface);
+  border: 1px solid rgba(242, 233, 223, 0.08);
+  border-radius: 0.75rem;
+}
+
+.work__card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.work__card-meta {
+  margin: 0 0 1rem;
+
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+.work__card-tags {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.work__card-tags li {
+  padding: 0.25rem 0.6rem;
+
+  color: var(--color-text-muted);
+  background: rgba(242, 233, 223, 0.06);
+  border: 1px solid rgba(242, 233, 223, 0.1);
+  border-radius: 999px;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.work__card-link {
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 a {
   color: #c58a5a;
   text-decoration-color: rgba(197, 138, 90, 0.55);
@@ -292,23 +613,6 @@ a {
 
 a:hover {
   color: #e0ad7a;
-}
-
-.site {
-  position: relative;
-  width: 100%;
-  height: 100dvh;
-  overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at top,
-      rgba(124, 38, 56, 0.14),
-      transparent 34rem
-    ),
-    var(--color-background);
-
-  color: var(--color-text);
 }
 
 .site-footer {
@@ -387,5 +691,17 @@ a:hover {
   .site-footer__icon {
     width: 1.35rem;
     height: 1.35rem;
+  }
+
+  .page {
+    padding: 6.5rem 1.25rem 6rem;
+  }
+
+  .page__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .process__card {
+    padding: 1.5rem;
   }
 }
