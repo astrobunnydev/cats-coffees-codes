@@ -34,31 +34,25 @@ const WORK = [
   {
     name: 'P.M Port Melbourne',
     meta: 'Luxury apartment leasing · Melbourne',
-    tags: ['WordPress', 'Elementor'],
+    tags: ['WordPress', 'Elementor', 'Astra'],
     url: 'https://pmportmelbourne.com.au/',
   },
   {
     name: 'American Family Care',
     meta: 'Urgent care clinic locator · 400+ US locations',
-    tags: ['WordPress', 'Elementor'],
+    tags: ['WordPress', 'Elementor', 'Astra'],
     url: 'https://www.afcurgentcare.com/',
-  },
-  {
-    name: 'Railway Adventures',
-    meta: 'Escorted rail holiday tours · Australia',
-    tags: ['React', 'Supabase'],
-    url: 'https://railwayadventures.travel/',
   },
   {
     name: 'The Alpine Club',
     meta: 'Private mountain club membership · Telluride',
-    tags: ['WordPress'],
+    tags: ['WordPress', 'ACF', 'Custom Theme'],
     url: 'https://thealpineclub.com/',
   },
   {
     name: 'Ramsay Postgraduate Scholarship',
     meta: 'Postgraduate scholarship program · Australia',
-    tags: ['WordPress', 'Elementor'],
+    tags: ['WordPress', 'ACF', 'Elementor', 'Astra'],
     url: 'https://ramsaypostgradscholarship.com/',
   },
 ]
