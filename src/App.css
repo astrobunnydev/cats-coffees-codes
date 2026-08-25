@@ -418,6 +418,10 @@
   letter-spacing: -0.04em;
 }
 
+.page--placeholder .page__intro {
+  margin-bottom: 1.25rem;
+}
+
 .page__header {
   text-align: center;
   margin-bottom: 4rem;
