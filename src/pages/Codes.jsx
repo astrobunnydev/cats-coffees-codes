@@ -169,7 +169,7 @@ function Codes() {
       <div className="work">
         <h2 className="work__heading">Selected Work</h2>
         <p className="process__subheading">
-          a few sites I've built, rebuilt, and kept alive.
+          a few sites I've built, rebuilt, and kept evolving.
         </p>
 
         <ul className="work__grid">
