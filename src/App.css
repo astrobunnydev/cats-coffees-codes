@@ -160,6 +160,10 @@
     0 0 24px var(--color-coffee);
 }
 
+:root[data-theme="light"] .site-nav__brand:hover {
+  color: var(--color-coffee);
+}
+
 .site-nav__links {
   display: flex;
   align-items: center;
