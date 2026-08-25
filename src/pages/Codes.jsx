@@ -122,7 +122,7 @@ function Codes() {
       <div className="what">
         <h2 className="what__heading">What I do</h2>
         <p className="process__subheading">
-          10 years in web development. still curious, still debugging.
+          10+ years in web development. still curious, still debugging.
         </p>
 
         <ul className="what__pills">
