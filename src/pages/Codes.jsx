@@ -14,7 +14,12 @@ const SERVICES = [
   {
     label: 'Technical Audits',
     description:
-      "A deep look at how the site is built, what's slowing it down, and what's likely to break next.",
+      "A deep look at how the site is built, how its parts work together, where the technical risks are, and what's likely to break next.",
+  },
+  {
+    label: 'Performance Optimization',
+    description:
+      "Finding bottlenecks, unnecessary weight, and technical issues that are getting in the site's way.",
   },
   {
     label: 'Maintenance & Fixes',
@@ -29,12 +34,12 @@ const SERVICES = [
   {
     label: 'Integrations',
     description:
-      "Connecting the tools you already use, forms, booking systems, payment providers, and more, into the site itself.",
+      "Connecting your site with CRMs, APIs, forms, tracking platforms, booking systems, payment providers, and other third-party tools.",
   },
   {
-    label: 'Performance',
+    label: 'Tracking & Analytics',
     description:
-      "Finding what's making the site slow and fixing it, from images to plugins to server response time.",
+      "Setting up and troubleshooting website tracking so the data being collected actually reflects what users are doing.",
   },
 ]
 
