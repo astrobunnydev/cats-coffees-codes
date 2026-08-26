@@ -186,6 +186,40 @@ function Layout() {
               />
             </svg>
           </a>
+
+          <a
+            className="site-footer__link"
+            href="/ria-gino-cv.pdf"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View Ria Gino's CV (PDF)"
+          >
+            <svg
+              className="site-footer__icon cv-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5.5 3.5h8.7l4.3 4.3v12.7H5.5z" />
+              <path d="M14.2 3.5v4.3h4.3" />
+              <text
+                x="12"
+                y="16"
+                textAnchor="middle"
+                fill="currentColor"
+                stroke="none"
+                fontSize="6"
+                fontWeight="600"
+                fontFamily="Arial, sans-serif"
+              >
+                CV
+              </text>
+            </svg>
+          </a>
         </div>
         </div>
 

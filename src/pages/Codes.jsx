@@ -205,6 +205,21 @@ function Codes() {
           ))}
         </ul>
       </div>
+
+      <div className="cta">
+        <h2 className="cta__heading">have something in mind?</h2>
+        <p className="cta__subheading">
+          tell me what you're building, fixing, or trying to untangle.
+        </p>
+        <a
+          className="cta__button"
+          href="https://riagino.info/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          [ get in touch ] <span className="cta__arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </section>
   )
 }
