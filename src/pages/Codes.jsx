@@ -86,7 +86,7 @@ const WORK = [
   {
     name: 'American Family Care',
     meta: 'Urgent care clinic locator · 400+ US locations',
-    tags: ['Built from scratch', 'WordPress', 'Elementor', 'CPT', 'Astra'],
+    tags: ['Built from scratch', 'WordPress', 'Elementor', 'Astra'],
     url: 'https://www.afcurgentcare.com/',
     image: '/afc.jpg',
   },
