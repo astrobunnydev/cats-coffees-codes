@@ -1,6 +1,6 @@
 /**
  * Author: Ria Gino
- * GitHub: https://github.com/astrobunnydev
+ * https://catscoffeescodes.com/
  */
 
 import { Route, Routes } from 'react-router-dom'
