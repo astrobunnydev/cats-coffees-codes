@@ -59,7 +59,7 @@ const STEPS = [
     number: '02',
     title: 'Technical Audit',
     description:
-      "From there, I dig deeper into how the site is built, how well it performs, how its different parts work together, and anything sitting beneath the obvious problem. I'm looking not just at what's broken, but at what might break next.",
+      "From there, I dig deeper into what the project actually needs, how the site should be built, and how its different parts should work together, to find the best approach for implementing everything properly. For existing sites, that also means looking at the current setup: what should stay, what should change, and what could cause problems later.",
   },
   {
     number: '03',
