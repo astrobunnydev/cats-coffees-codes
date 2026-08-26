@@ -489,7 +489,7 @@
   border-radius: 999px;
 
   color: var(--color-text-muted);
-  cursor: pointer;
+  cursor: default;
 
   font-family:
     "SFMono-Regular",
