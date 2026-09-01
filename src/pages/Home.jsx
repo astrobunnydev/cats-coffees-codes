@@ -54,7 +54,7 @@ function Home() {
 
         <p className="site-hero__intro">
           personal projects, experiments, and web things by{' '}
-          <a href="https://riagino.info" target="_blank" rel="noreferrer">
+          <a href="https://riagino.info" target="_blank" rel="noopener">
             ria
           </a>
           .

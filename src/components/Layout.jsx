@@ -134,7 +134,7 @@ function Layout() {
             className="site-footer__link"
             href="https://riagino.info"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="Ria Gino's profile at riagino.info"
           >
             <svg
@@ -153,7 +153,7 @@ function Layout() {
             className="site-footer__link"
             href="https://www.linkedin.com/in/ria-gino/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="Ria Gino on LinkedIn"
           >
             <svg
@@ -172,7 +172,7 @@ function Layout() {
             className="site-footer__link"
             href="https://github.com/astrobunnydev"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
             aria-label="Ria Gino on GitHub"
           >
             <svg

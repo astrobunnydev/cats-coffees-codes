@@ -215,7 +215,7 @@ function Codes() {
           className="cta__button"
           href="https://riagino.info/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener"
         >
           [ get in touch ] <span className="cta__arrow" aria-hidden="true">↗</span>
         </a>
