@@ -61,6 +61,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
   .page {
     animation: page-fade-in 0.5s ease both;
   }
@@ -521,6 +525,63 @@
   color: var(--color-text-muted);
   line-height: 1.65;
   font-size: 0.95rem;
+}
+
+.what__nudge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1.75rem auto 0;
+
+  color: var(--color-coffee);
+  text-decoration: none;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease,
+    color 160ms ease,
+    text-shadow 250ms ease;
+}
+
+.what__nudge.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.what__nudge:hover,
+.what__nudge:focus-visible {
+  color: color-mix(in srgb, var(--color-coffee) 55%, white);
+  text-shadow:
+    0 0 1px currentColor,
+    0 0 3px currentColor,
+    0 0 9px var(--color-coffee);
+}
+
+:root[data-theme="light"] .what__nudge:hover,
+:root[data-theme="light"] .what__nudge:focus-visible {
+  color: var(--color-coffee);
+}
+
+.what__nudge span {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+
+.what__nudge:hover span,
+.what__nudge:focus-visible span {
+  transform: translateY(2px);
 }
 
 .process {

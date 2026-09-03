@@ -108,6 +108,7 @@ const WORK = [
 
 function Codes() {
   const [activeService, setActiveService] = useState(0)
+  const [hasExploredServices, setHasExploredServices] = useState(false)
 
   return (
     <section className="page page--codes">
@@ -133,8 +134,14 @@ function Codes() {
                 className={`what__pill${
                   index === activeService ? ' is-active' : ''
                 }`}
-                onMouseEnter={() => setActiveService(index)}
-                onFocus={() => setActiveService(index)}
+                onMouseEnter={() => {
+                  setActiveService(index)
+                  setHasExploredServices(true)
+                }}
+                onFocus={() => {
+                  setActiveService(index)
+                  setHasExploredServices(true)
+                }}
                 onClick={() => setActiveService(index)}
               >
                 [ {service.label} ]
@@ -146,6 +153,15 @@ function Codes() {
         <p className="what__description">
           {SERVICES[activeService].description}
         </p>
+
+        <a
+          href="#cta"
+          className={`what__nudge${
+            hasExploredServices ? ' is-visible' : ''
+          }`}
+        >
+          [ found something interesting? <span aria-hidden="true">↓</span> ]
+        </a>
       </div>
 
       <div className="process">
@@ -206,7 +222,7 @@ function Codes() {
         </ul>
       </div>
 
-      <div className="cta">
+      <div className="cta" id="cta">
         <h2 className="cta__heading">have something in mind?</h2>
         <p className="cta__subheading">
           tell me what you're building, fixing, or trying to untangle.
