@@ -7,3 +7,5 @@ Disallow: /alpine.jpg
 Disallow: /ramsay.jpg
 Disallow: /favicon.svg
 Disallow: /icons.svg
+
+Sitemap: https://catscoffeescodes.com/sitemap.xml
