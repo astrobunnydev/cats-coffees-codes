@@ -4,17 +4,11 @@
  */
 
 import { useEffect, useState } from 'react'
-import { useDocumentMeta } from '../hooks/useDocumentMeta.js'
 
 const TITLE = '</ cats. coffees. codes. >'
 const TYPE_INTERVAL_MS = 45
 
 function Home() {
-  useDocumentMeta(
-    'cats. coffees. codes.',
-    'Personal projects, experiments, and web things by Ria — freelance full-stack web developer.'
-  )
-
   const [typedLength, setTypedLength] = useState(0)
   const [showCaret, setShowCaret] = useState(false)
 

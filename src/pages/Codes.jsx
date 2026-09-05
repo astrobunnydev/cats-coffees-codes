@@ -4,7 +4,6 @@
  */
 
 import { useState } from 'react'
-import { useDocumentMeta } from '../hooks/useDocumentMeta.js'
 
 const SERVICES = [
   {
@@ -108,11 +107,6 @@ const WORK = [
 ]
 
 function Codes() {
-  useDocumentMeta(
-    'codes. — freelance full-stack web developer | cats. coffees. codes.',
-    "Freelance full-stack web development by Ria Gino — WordPress, Shopify, technical audits, migrations, and ongoing support."
-  )
-
   const [activeService, setActiveService] = useState(0)
   const [hasExploredServices, setHasExploredServices] = useState(false)
 
