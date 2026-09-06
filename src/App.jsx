@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx'
 import Cats from './pages/Cats.jsx'
 import Coffees from './pages/Coffees.jsx'
 import Codes from './pages/Codes.jsx'
+import NotFound from './pages/NotFound.jsx'
 import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="cats" element={<Cats />} />
         <Route path="coffees" element={<Coffees />} />
         <Route path="codes" element={<Codes />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   )
