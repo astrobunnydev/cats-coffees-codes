@@ -11,6 +11,7 @@ const TYPE_INTERVAL_MS = 45
 function Home() {
   const [typedLength, setTypedLength] = useState(0)
   const [showCaret, setShowCaret] = useState(false)
+  const [logoStamped, setLogoStamped] = useState(false)
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
@@ -19,6 +20,7 @@ function Home() {
 
     if (prefersReducedMotion) {
       setTypedLength(TITLE.length)
+      setLogoStamped(true)
       return
     }
 
@@ -32,6 +34,7 @@ function Home() {
       if (charsTyped >= TITLE.length) {
         clearInterval(interval)
         setTimeout(() => setShowCaret(false), 900)
+        setTimeout(() => setLogoStamped(true), 250)
       }
     }, TYPE_INTERVAL_MS)
 
@@ -41,9 +44,18 @@ function Home() {
   return (
     <section className="site-hero">
       <div className="site-hero__brand">
-        <p className="site-hero__icons" aria-hidden="true">
-          🐈 ☕ 💻
-        </p>
+        <img
+          className={`site-hero__logo site-hero__logo--coffee${logoStamped ? ' is-stamped' : ''}`}
+          src="/logo-coffee-transparent.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          className={`site-hero__logo site-hero__logo--red${logoStamped ? ' is-stamped' : ''}`}
+          src="/logo-red-transparent.png"
+          alt=""
+          aria-hidden="true"
+        />
 
         <h1 className="site-hero__title" aria-label="cats. coffees. codes.">
           <span aria-hidden="true">
