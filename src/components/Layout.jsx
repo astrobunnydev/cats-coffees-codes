@@ -3,10 +3,11 @@
  * https://catscoffeescodes.com/
  */
 
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 const BRAND = '</ ccc >'
+const CANONICAL_ORIGIN = 'https://catscoffeescodes.com'
 
 function getInitialTheme() {
   const stored = window.localStorage.getItem('ccc-theme')
@@ -15,11 +16,22 @@ function getInitialTheme() {
 
 function Layout() {
   const [theme, setTheme] = useState(getInitialTheme)
+  const location = useLocation()
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
     window.localStorage.setItem('ccc-theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    let link = document.querySelector('link[rel="canonical"]')
+    if (!link) {
+      link = document.createElement('link')
+      link.setAttribute('rel', 'canonical')
+      document.head.appendChild(link)
+    }
+    link.setAttribute('href', `${CANONICAL_ORIGIN}${location.pathname}`)
+  }, [location.pathname])
 
   return (
     <div className="site">
