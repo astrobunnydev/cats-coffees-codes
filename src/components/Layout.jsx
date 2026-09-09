@@ -36,14 +36,13 @@ function Layout() {
   return (
     <div className="site">
       <nav className="site-nav" aria-label="Primary">
-        <NavLink
+        <a
           className="site-nav__brand"
-          to="/"
-          end
+          href="/"
           aria-label="cats. coffees. codes., home"
         >
           {BRAND}
-        </NavLink>
+        </a>
 
         <div className="site-nav__links">
           <NavLink
