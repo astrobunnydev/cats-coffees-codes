@@ -31,7 +31,6 @@ const SKILLS = [
   'Core Web Vitals',
   'Google Merchant Center',
   'Google Search Console',
-  'Technical SEO',
 ]
 
 function Home() {
