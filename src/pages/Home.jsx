@@ -106,17 +106,19 @@ function Home() {
       </section>
 
       <section className="skills-marquee" aria-label="Skills and tools">
-        <div className="skills-marquee__track">
-          <ul className="skills-marquee__list">
-            {SKILLS.map((skill) => (
-              <li key={skill}>[ {skill} ]</li>
-            ))}
-          </ul>
-          <ul className="skills-marquee__list" aria-hidden="true">
-            {SKILLS.map((skill) => (
-              <li key={`${skill}-dup`}>[ {skill} ]</li>
-            ))}
-          </ul>
+        <div className="skills-marquee__bar">
+          <div className="skills-marquee__track">
+            <ul className="skills-marquee__list">
+              {SKILLS.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+            <ul className="skills-marquee__list" aria-hidden="true">
+              {SKILLS.map((skill) => (
+                <li key={`${skill}-dup`}>{skill}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
     </div>
