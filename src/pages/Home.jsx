@@ -10,10 +10,14 @@ const TYPE_INTERVAL_MS = 45
 
 const SKILLS = [
   'JavaScript',
+  'PHP',
   'WordPress',
   'Elementor',
+  'Astra Theme',
+  'ACF',
+  'CPT',
   'Shopify',
-  'Python',
+  'Zapier',
   'Google Tag Manager',
   'GA4',
   'Git',
@@ -26,6 +30,7 @@ const SKILLS = [
   'WooCommerce',
   'Core Web Vitals',
   'Google Merchant Center',
+  'Google Search Console',
   'Technical SEO',
 ]
 

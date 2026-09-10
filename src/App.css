@@ -541,6 +541,25 @@
     monospace;
   font-size: 0.6rem;
   letter-spacing: 0.02em;
+
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.skills-marquee__list li:hover {
+  background: var(--color-surface);
+  border-color: rgba(168, 117, 79, 0.4);
+  color: color-mix(in srgb, var(--color-coffee) 55%, white);
+  text-shadow:
+    0 0 1px currentColor,
+    0 0 3px currentColor,
+    0 0 9px var(--color-coffee);
+}
+
+:root[data-theme="light"] .skills-marquee__list li:hover {
+  color: var(--color-coffee);
 }
 
 @media (prefers-reduced-motion: reduce) {
