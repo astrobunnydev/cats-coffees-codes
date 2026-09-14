@@ -23,11 +23,19 @@ function Cats() {
         <ul className="currently__grid">
           <li className="currently__card">
             <span className="currently__label">[ nails this month ]</span>
-            <div className="currently__nails" aria-hidden="true">
-              💅
-            </div>
+            <a
+              className="currently__nails"
+              href="https://www.instagram.com/clawsbytenshi_/reel/DbBFx4Nzg-P/?ref=catscoffeescodes"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="/nails-this-month.jpg"
+                alt="This month's manicure: long matte stiletto nails in a dark brown-to-black ombré."
+              />
+            </a>
             <p className="currently__detail">
-              warm terracotta, short almond shape.
+              vampy black-to-brown ombré, matte stiletto.
             </p>
             <p className="currently__detail currently__detail--muted">
               sep 2026 <span aria-hidden="true">♡</span>
@@ -35,7 +43,7 @@ function Cats() {
             <p className="currently__detail currently__credit">
               nails by{' '}
               <a
-                href="https://www.instagram.com/clawsbytenshi_"
+                href="https://www.instagram.com/clawsbytenshi_/reel/DbBFx4Nzg-P/?ref=catscoffeescodes"
                 target="_blank"
                 rel="noopener"
               >
