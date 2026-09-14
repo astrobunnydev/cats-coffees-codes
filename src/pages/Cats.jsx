@@ -9,8 +9,8 @@ function Cats() {
       <header className="page__header">
         <h1 className="page__title">cats.</h1>
         <p className="page__intro">
-          cat photos, personal updates, and whatever's currently stuck in my
-          head.
+          cat photos, personal updates, and whatever my AuDHD decided matters
+          today.
         </p>
       </header>
 
