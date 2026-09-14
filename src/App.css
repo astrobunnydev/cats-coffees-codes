@@ -769,26 +769,12 @@
 
 .song-embed {
   position: relative;
-  width: calc(100% + 18px);
-  margin: 1.5rem 0 0 -9px;
+  width: 100%;
+  margin: 0;
 
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
-  transform: rotate(-1deg);
-}
-
-.song-embed::before {
-  content: "";
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  width: 65px;
-  height: 18px;
-  transform: translateX(-50%) rotate(2deg);
-
-  background: rgba(218, 197, 165, 0.65);
-  z-index: 2;
 }
 
 .song-embed iframe {
@@ -860,7 +846,7 @@
 }
 
 .currently__detail--muted {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   color: var(--color-coffee);
   font-size: 0.8rem;
 }
@@ -963,7 +949,7 @@
 }
 
 .polaroid--1 {
-  grid-column: 2 / span 4;
+  grid-column: 5 / span 4;
   transform: rotate(-3deg);
 }
 
@@ -1024,7 +1010,7 @@
 }
 
 .note--1 {
-  grid-column: 7 / span 3;
+  grid-column: 9 / span 3;
   margin-top: 3rem;
   transform: rotate(3deg);
 }
