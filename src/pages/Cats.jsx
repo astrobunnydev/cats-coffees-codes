@@ -90,7 +90,7 @@ function Cats() {
       </section>
 
       <p className="page__intro currently__more">
-        more cat photos coming soon <span aria-hidden="true">↓</span>
+        the chaos continues... <span aria-hidden="true">↓</span>
       </p>
     </section>
   )
