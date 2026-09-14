@@ -35,7 +35,7 @@ function Cats() {
               />
             </a>
             <p className="currently__detail">
-              vampy black-to-brown ombré, matte stiletto.
+              deep matte black fading into dusty rose with a smoky fade.
             </p>
             <p className="currently__detail currently__detail--muted">
               july 2026 <span aria-hidden="true">♡</span>
