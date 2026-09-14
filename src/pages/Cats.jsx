@@ -38,7 +38,7 @@ function Cats() {
               vampy black-to-brown ombré, matte stiletto.
             </p>
             <p className="currently__detail currently__detail--muted">
-              sep 2026 <span aria-hidden="true">♡</span>
+              july 2026 <span aria-hidden="true">♡</span>
             </p>
             <p className="currently__detail currently__credit">
               nails by{' '}
