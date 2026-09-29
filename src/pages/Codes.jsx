@@ -86,7 +86,7 @@ const WORK = [
   {
     name: 'American Family Care',
     meta: 'Urgent care clinic locator · 400+ US locations',
-    tags: ['Built from scratch', 'WordPress', 'Elementor', 'Astra'],
+    tags: ['Built from scratch', 'WordPress', 'Elementor', 'Astra', 'Clinic Locator'],
     url: 'https://www.afcurgentcare.com/',
     image: '/afc.jpg',
   },
@@ -103,6 +103,20 @@ const WORK = [
     tags: ['Built from scratch', 'WordPress', 'ACF', 'CPT', 'Elementor', 'Astra'],
     url: 'https://ramsaypostgradscholarship.com/',
     image: '/ramsay.jpg',
+  },
+  {
+    name: 'MORI Coffee',
+    meta: 'Specialty café · Blackburn, Melbourne',
+    tags: ['Shopify', 'Shopify Payments', 'E-commerce'],
+    url: 'https://moricoffee.com.au/',
+    image: '/mori.jpg',
+  },
+  {
+    name: 'Machrihanish Dunes',
+    meta: 'Resort & Golf Club · Kintyre, Scotland',
+    tags: ['Built from scratch', 'WordPress', 'Elementor', 'ACF', 'CPT'],
+    url: 'https://machrihanishdunes.com/',
+    image: '/machdunes.jpg',
   },
 ]
 
