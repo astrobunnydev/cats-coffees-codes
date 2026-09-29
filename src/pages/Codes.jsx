@@ -109,7 +109,8 @@ const WORK = [
     meta: 'Specialty café · Blackburn, Melbourne',
     tags: ['Shopify', 'Shopify Payments', 'E-commerce'],
     url: 'https://moricoffee.com.au/',
-    image: '/mori.jpg',
+    image: '/mori.webp',
+    imagePosition: 'center center',
   },
   {
     name: 'Machrihanish Dunes',
@@ -213,7 +214,12 @@ function Codes() {
               >
                 <div
                   className="work__card-preview"
-                  style={{ backgroundImage: `url(${item.image})` }}
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                    ...(item.imagePosition && {
+                      backgroundPosition: item.imagePosition,
+                    }),
+                  }}
                   aria-hidden="true"
                 />
                 <div className="work__card-scrim" aria-hidden="true" />
