@@ -53,17 +53,17 @@ function Cats() {
           </li>
 
           <li className="currently__card">
-            <span className="currently__label">[ album on repeat ]</span>
+            <span className="currently__label">[ playlist on repeat ]</span>
             <div className="song-embed">
               <iframe
-                src="https://open.spotify.com/embed/album/2yDFVH9CeOHt0sc9eI0aBs?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/playlist/3HvgaZeBWbr7UjFeicPFRI?utm_source=generator"
                 width="100%"
                 height="352"
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                title="Spotify player: PRIMA by Adéla"
+                title="Spotify playlist: EPIC: The Musical (All songs in order)"
               />
             </div>
           </li>
