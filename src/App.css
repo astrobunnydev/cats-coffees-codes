@@ -924,6 +924,14 @@
   background: linear-gradient(160deg, #d9c3a4, #b98f66);
 }
 
+.polaroid .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 80%;
+}
+
 .photo__placeholder {
   font-size: 3rem;
 }

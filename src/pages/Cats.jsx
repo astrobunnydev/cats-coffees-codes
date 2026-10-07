@@ -73,9 +73,10 @@ function Cats() {
       <section className="cat-scrapbook">
         <figure className="polaroid polaroid--1 taped">
           <div className="photo">
-            <span className="photo__placeholder" aria-hidden="true">
-              😴
-            </span>
+            <img
+              src="/isis-polaroid.jpg"
+              alt="A fluffy grey cat fast asleep on a wooden deck beside red roses and a white hydrangea."
+            />
           </div>
           <figcaption>
             mood: this. <span aria-hidden="true">♡</span>
