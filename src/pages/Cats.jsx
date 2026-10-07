@@ -74,8 +74,8 @@ function Cats() {
         <figure className="polaroid polaroid--1 taped">
           <div className="photo">
             <img
-              src="/isis-polaroid.jpg"
-              alt="A fluffy grey cat fast asleep on a wooden deck beside red roses and a white hydrangea."
+              src="/ashe-yuki-polaroid.jpg"
+              alt="Two cats lying side by side on a white shelf, a fluffy silver cat on the left and a brown-and-white cat with blue eyes on the right, both looking at the camera."
             />
           </div>
           <figcaption>
