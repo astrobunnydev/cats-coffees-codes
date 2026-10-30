@@ -91,7 +91,9 @@ function Home() {
           </h1>
 
           <p className="site-hero__intro">
-            personal projects, experiments, and web things by{' '}
+            the person, the photos, and the work
+            <br />
+            by{' '}
             <a href="https://riagino.info" target="_blank" rel="noopener">
               ria
             </a>
