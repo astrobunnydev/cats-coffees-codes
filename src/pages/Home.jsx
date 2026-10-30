@@ -91,8 +91,8 @@ function Home() {
           </h1>
 
           <p className="site-hero__intro">
-            the person, the photos, and the work
-            <br />
+            the person, the photos, and the work{' '}
+            <br className="site-hero__break" />
             by{' '}
             <a href="https://riagino.info" target="_blank" rel="noopener">
               ria
